@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<title>Overzicht pagina transavia storys</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<!-- Popups aanmelden & inloggen -->
+
+<!-- inloggen -->
+<section id="inloggen">
+
+	<h1>Inloggen</h1>
+
+	<a onclick="toggle_visibility('inloggen');"><i class="icon-close"></i></a>
+
+
+	<form>
+
+		<label for="email">Email</label>
+		<input type="text" name="email" placeholder="Email" required>
+
+		<label for="password">Wachtwoord</label>
+		<input type="password" name="password" placeholder="Wachtwoord" required>
+
+		<input type="submit" value="Login">
+
+		<a href="">Wachtwoord vergeten? <i class="icon-down"></i></a>	<!-- onclick dropdown show -->
+		<a href="">Gebruikersnaam vergeten? <i class="icon-down"></i></a> <!-- onclick dropdown show -->
+		
+	</form>
+</section>
+
+<!-- aanmelden -->
+<section id="aanmelden">
+
+	<h1>Aanmelden</h1>
+
+
+	
+	<form>
+		<label for="firstname">Voornaam</label>
+		<input type="text" name="firstname" placeholder="Voornaam" required>
+		<label for="insertname">Tussenvoegsel</label>
+		<input type="text" name="insertname" placeholder="Tussenvoegsel">
+		<label for="lastname">Achternaam</label>
+		<input type="text" name="lastname" placeholder="Achternaam" required>
+		
+		<label for="email">Email</label>
+		<input type="email" name="email" placeholder="Email" required>
+		<label for="phone">Telefoonnummer</label>
+		<input type="tel" name="phone" placeholder="Telefoonnummer">
+
+		<label for="street">straat</label>
+		<input type="text" placeholder="straat">
+		<label for="number">staatnummer</label>
+		<input type="number" placeholder="staatnummer">
+
+		<label for="text">Postcode</label>
+		<input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="Postcode">
+
+		<label for="password">Wachtwoord</label>
+		<input type="password" name="password" placeholder="Wachtwoord" required>
+		<input type="password" name="password" placeholder="Herhaal wachtwoord" required>
+
+		<input type="submit" value="Verstuur">
+		
+	</form>
+</section>
+
+
+<!-- header -->
+<header>
+	<img src="images/logo_transavia.png" alt="logo transavia storys">
+
+	<nav>
+		<ul>
+			<li><a onclick="toggle_visibility('inloggen');">Inloggen</a></li>
+			<li>|</li>
+			<li><a onclick="toggle_visibility('aanmelden');">Aanmelden</a></li>
+		</ul>
+	</nav>
+
+</header>
+
+
+<!-- content -->
+<main>
+
+	<!-- sidebar -->
+	<aside>
+		<h1>Categorie&euml;n</h1>
+		
+		<ul>
+			<li><i class="icon-storys"></i>Alle verhalen</li>
+			<li><i class="icon-family"></i>Familie</li>
+			<li><i class="icon-sport"></i>Sport</li>
+			<li><i class="icon-senses"></i>Zintuigen</li>
+			<li><i class="icon-fantasy"></i>Fantasie</li>
+			<li><i class="icon-news"></i>Nieuws</li>
+			<li><i class="icon-personally"></i>Persoonlijk</li>
+			<li><i class="icon-Bizarre"></i>Bizar</li>
+			<li><i class="icon-way"></i>Onderweg</li>
+			<li><i class="icon-Poetry"></i>Poezie</li>
+			<li><i class="icon-Language"></i>Taal</li>
+			<li><i class="icon-entertainment"></i>Entertainment</li>
+			<li><i class="icon-Conversation"></i>Conversatie</li>
+		</ul>
+	</aside>
+
+
+	<!-- storys -->
+	<section>
+		<h1>Alle verhalen</h1>
+
+		<div class="filter"> <!-- leraar vragen -->
+			<select>
+				<option value="likes">Meeste Likes</option>
+				<option value="comments">Meeste reacties</option>
+				<option value="date">Laatst toegevoegd</option>
+			</select>
+		</div> 
+
+
+		<!-- story 1 -->
+		<article>
+
+			<!-- icons -->
+			<ul>
+				<li><i class="icon-familie"></i></li>
+				<li><i class="icon-comments">4</i></li>
+				<li><i class="icon-like">10</i></li>
+			</ul>
+
+			<h2>Zoon</h2>
+			<p>Vroem. Tuut tuut. Wh&egrave;&egrave;&egrave;h!! Die! Die! Wh&egrave;&egrave;&egrave;h! Die! Die! Hjumhjumhjum. Zzzzzzzzzz.* Zzzzzzz.** Zzzzzzz. Hjumhjumhjum. Zzzzzzz. Grumbl. Huh? Wh&egrave;&egrave;&egrave;h. Die! Die! Papa? Hjmwhumwhum. Boe?Boe? Hjmwhumwhum. Wh&egrave;&egrave;&egrave;h!!! Die!*** Zjjoemmm. Vroem. Tuut tuut. Schoe!**** * We zitten in zo&rsquo;n enorme auto, samen met een aantal andere mensen. Ik voel dat ik elk moment in slaap kan vallen. </p>
+
+			<button class="btn-readmore">Lees verder</button>
+		
+			<time datetime="2016-12-07">12 Juli 2016</time>
+
+		</article>
+
+
+
+		<!-- story 2 -->
+		<article>
+
+			<!-- icons -->
+			<ul>
+				<li><i class="icon-familie"></i></li>
+				<li><i class="icon-comments">4</i></li>
+				<li><i class="icon-like">10</i></li>
+			</ul>
+			
+
+
+
+			<h2>Het gebrek</h2>
+			<p>Je zocht een boek van Raymond Queneau Stijloefeningen was het geheten Je stapte uit de bus, je zoon sliep zo Je zocht een boek van Raymond Queneau Liep over een nat en wind&rsquo;rig plein, o Bouwputten hadden het uiteen gereten Je zocht een boek van Raymond Queneau Stijloefeningen was het geheten Een Franse vrouw me</p>
+
+			<button class="btn-readmore">Lees verder</button>
+		
+			<time datetime="2016-12-07">12 Juli 2016</time>
+
+		</article>
+	</section>
+</main>	
+
+
+
+
+</body>
+
+	<script type="text/javascript" src="js/popup.js"></script>
+
+</html>
