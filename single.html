@@ -5,200 +5,139 @@
 	<title>Zoon - Verhaal pagina transavia storys</title>
 
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 
-<!-- Popups aanmelden & inloggen -->
+	<!-- header -->
+	<header>
+		<img src="images/logo_transavia.png" alt="logo transavia storys">
 
-<!-- inloggen -->
-<section id="inloggen">
-
-<h1>Inloggen</h1>
-
-	<a onclick="toggle_visibility('inloggen');"><i class="icon-close"></i></a>
-
-
-	<form action="">
-
-		<label for="email">Email</label>
-		<input type="text" name="email" placeholder="Email" required>
-		
-		<label for="password">Wachtwoord</label>
-		<input type="password" name="password" placeholder="Wachtwoord" required>
-
-		<input type="submit" value="Login">
-
-		<a href="">Wachtwoord vergeten? <i class="icon-down"></i></a>	<!-- onclick dropdown show -->
-		<a href="">Gebruikersnaam vergeten? <i class="icon-down"></i></a> <!-- onclick dropdown show -->
-		
-	</form>
-</section>
-
-<!-- aanmelden -->
-<section id="aanmelden">
-	<h1>Aanmelden</h1>
-
-	<a onclick="toggle_visibility('aanmelden');"><i class="icon-close"></i></a>
-	
-	<form action="">
-
-		<label for="firstname">Voornaam</label>
-		<input type="text" name="firstname" placeholder="Voornaam" required>
-		<label for="insertname">Tussenvoegsel</label>
-		<input type="text" name="insertname" placeholder="Tussenvoegsel">
-		<label for="lastname">Achternaam</label>
-		<input type="text" name="lastname" placeholder="Achternaam" required>
-		
-		<label for="email">Email</label>
-		<input type="email" name="email" placeholder="Email" required>
-		<label for="phone">Telefoonnummer</label>
-		<input type="tel" name="phone" placeholder="Telefoonnummer">
-
-		<label for="street">straat</label>
-		<input type="text" placeholder="straat">
-		<label for="number">staatnummer</label>
-		<input type="number" placeholder="staatnummer">
-
-		<label for="text">Postcode</label>
-		<input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="Postcode">
-
-		<label for="password">Wachtwoord</label>
-		<input type="password" name="password" placeholder="Wachtwoord" required>
-		<input type="password" name="password" placeholder="Herhaal wachtwoord" required>
-
-		<input type="submit" value="Verstuur">
-		
-	</form>
-</section>
-
-
-<!-- header -->
-<header>
-	<img src="images/logo_transavia.png" alt="logo transavia storys">
-
-	<nav>
-		<ul>
-			<li><a onclick="toggle_visibility('inloggen');">Inloggen</a></li>
-			<li>|</li>
-			<li><a onclick="toggle_visibility('aanmelden');">Aanmelden</a></li>
-		</ul>
-	</nav>
-
-</header>
-
-
-<!-- content -->
-<main>
-
-	<!-- sidebar -->
-	<aside>
-		<h1>Categorie&euml;n</h1>
-		
-		<ul>
-			<li><i class="icon-storys"></i>Alle verhalen</li>
-			<li><i class="icon-family"></i>Familie</li>
-			<li><i class="icon-sport"></i>Sport</li>
-			<li><i class="icon-senses"></i>Zintuigen</li>
-			<li><i class="icon-fantasy"></i>Fantasie</li>
-			<li><i class="icon-news"></i>Nieuws</li>
-			<li><i class="icon-personally"></i>Persoonlijk</li>
-			<li><i class="icon-Bizarre"></i>Bizar</li>
-			<li><i class="icon-way"></i>Onderweg</li>
-			<li><i class="icon-Poetry"></i>Poezie</li>
-			<li><i class="icon-Language"></i>Taal</li>
-			<li><i class="icon-entertainment"></i>Entertainment</li>
-			<li><i class="icon-Conversation"></i>Conversatie</li>
-		</ul>
-	</aside>
-
-
-	<!-- storys -->
-	<section>
-		<h1>Het verhaal</h1>
-		
-		<article>
-			<!-- icons -->
+		<nav>
 			<ul>
-				<li><i class="icon-familie"></i></li>
-				<li><i class="icon-comments">4</i></li>
-				<li><i class="icon-like">10</i></li>
-				<li><time datetime="2016-12-07">12 Juli 2016</time></li>
-				<li>Door Molovich</li>
+				<li><a href="inlog.html">Inloggen</a></li>
+				<li>|</li>
+				<li><a href="inlog.html">Aanmelden</a></li>
 			</ul>
+		</nav>
+
+	</header>
 
 
-			<h1>Zoon</h1>
-			<p>Je zocht een boek van Raymond Queneau
-			Stijloefeningen was het geheten
-			Je stapte uit de bus, je zoon sliep zo
-			Je zocht een boek van Raymond Queneau
-			Liep over een nat en wind&rsquo;rig plein, o
-			Bouwputten hadden het uiteen gereten
-			Je zocht een boek van Raymond Queneau
-			Stijloefeningen was het geheten
+	<!-- content -->
+	<main>
 
-			Een Franse vrouw met pikzwart haar
-			Vroeg is dit wellicht het postkantoor?
-			Het is de Openbare bieb, sinds dag en jaar
-			Een Franse vrouw met pikzwart haar
-			Vroeg je wijze raad (en die had je), maar
-			Ze rende er als de wind vandoor
-			Een Franse vrouw met pikzwart haar
-			Vroeg is dit wellicht het postkantoor?
-
-			Alles wees er op dat het boek aanwezig was
-			Maar hoe je zocht, je vond het niet
-			Wellicht dat je de titels op de ruggen niet goed las
-			Alles wees er op dat het boek aanwezig was
-			Volgens de computer stond het in de kast
-			Alsof de logica der dingen jou weer eens verried
-			Alles wees er op dat het boek aanwezig was
-			Maar hoe je zocht, je vond het niet
-
-			Als je niet kunt vinden wat je zoekt
-			Dan kun je beter zoeken wat je vindt
-			Een medewerker had nog met je mee gelookt
-			Als je niet kunt vinden wat je zoekt
-			En je op de weg terug die kutbieb met z&rsquo;n kutsysteem vervloekt
-			Vind je, vlak bij huis, precies de juiste schoentjes voor je kind!
-			Als je niet kunt vinden wat je zoekt
-			Dan kun je beter zoeken wat je vindt</p>
-		</article>
-
-	</section>
-
-	<section>
-		<h1>Reacties</h1>
-
-		<article> <!-- als je ingelogd bent -->
-			<h1>Geef een reactie</h1>
-
-			<textarea name="comment" id="" cols="30" rows="5" placeholder="Reactie"></textarea>
-		</article>
-
-		<article>
-			<h1>Mike</h1>
-			<time datetime="2016-12-07">12 Juli 2016</time>
-
-			<p>Wat een goed verhaal</p>
-		</article>
+		<!-- sidebar -->
+		<aside>
+			<h1>Categorie&euml;n</h1>
+			
+			<ul>
+				<li><span class=""></span>Alle verhalen</li>
+				<li><span class=""></span>Familie</li>
+				<li><span class=""></span>Sport</li>
+				<li><span class=""></span>Zintuigen</li>
+				<li><span class=""></span>Fantasie</li>
+				<li><span class=""></span>Nieuws</li>
+				<li><span class=""></span>Persoonlijk</li>
+				<li><span class=""></span>Bizar</li>
+				<li><span class=""></span>Onderweg</li>
+				<li><span class=""></span>Poezie</li>
+				<li><span class=""></span>Taal</li>
+				<li><span class=""></span>Entertainment</li>
+				<li><span class=""></span>Conversatie</li>
+			</ul>
+		</aside>
 
 
-		<article>
-			<h1>Daan</h1>
-			<time datetime="2016-12-07">13 Juli 2016</time>
+		<!-- storys -->
+		<section>
+			<h1>Het verhaal</h1>
+			
+			<article>
+				<!-- icons -->
+				<ul>
+					<li><span class="icon-familie"></span></li>
+					<li><span class="icon-comments">4</span></li>
+					<li><span class="icon-like">10</span></li>
+					<li><time datetime="2016-12-07">12 Juli 2016</time></li>
+					<li>Door Molovich</li>
+				</ul>
 
-			<p>Wat een slecht verhaal</p>
-		</article>
 
-	</section>
+				<h1>Zoon</h1>
+				<p>Je zocht een boek van Raymond Queneau
+				Stijloefeningen was het geheten
+				Je stapte uit de bus, je zoon sliep zo
+				Je zocht een boek van Raymond Queneau
+				Liep over een nat en wind&rsquo;rig plein, o
+				Bouwputten hadden het uiteen gereten
+				Je zocht een boek van Raymond Queneau
+				Stijloefeningen was het geheten
+
+				Een Franse vrouw met pikzwart haar
+				Vroeg is dit wellicht het postkantoor?
+				Het is de Openbare bieb, sinds dag en jaar
+				Een Franse vrouw met pikzwart haar
+				Vroeg je wijze raad (en die had je), maar
+				Ze rende er als de wind vandoor
+				Een Franse vrouw met pikzwart haar
+				Vroeg is dit wellicht het postkantoor?
+
+				Alles wees er op dat het boek aanwezig was
+				Maar hoe je zocht, je vond het niet
+				Wellicht dat je de titels op de ruggen niet goed las
+				Alles wees er op dat het boek aanwezig was
+				Volgens de computer stond het in de kast
+				Alsof de logica der dingen jou weer eens verried
+				Alles wees er op dat het boek aanwezig was
+				Maar hoe je zocht, je vond het niet
+
+				Als je niet kunt vinden wat je zoekt
+				Dan kun je beter zoeken wat je vindt
+				Een medewerker had nog met je mee gelookt
+				Als je niet kunt vinden wat je zoekt
+				En je op de weg terug die kutbieb met z&rsquo;n kutsysteem vervloekt
+				Vind je, vlak bij huis, precies de juiste schoentjes voor je kind!
+				Als je niet kunt vinden wat je zoekt
+				Dan kun je beter zoeken wat je vindt</p>
+			</article>
+
+		</section>
+
+		<section>
+			<h1>Reacties</h1>
+
+			<article> <!-- als je ingelogd bent -->
+				<h1>Geef een reactie</h1>
+
+				<textarea name="comment" id="" cols="30" rows="5" placeholder="Reactie"></textarea>
+			</article>
+
+			<article>
+				<h1>Mike</h1>
+				<time datetime="2016-12-07">12 Juli 2016</time>
+
+				<p>Wat een goed verhaal</p>
+			</article>
 
 
-</main> <!-- end main content -->	
+			<article>
+				<h1>Daan</h1>
+				<time datetime="2016-12-07">13 Juli 2016</time>
+
+				<p>Wat een slecht verhaal</p>
+			</article>
+
+		</section>
+
+
+	</main> <!-- end main content -->	
 
 
 </body>
 
-	<script type="text/javascript" src="js/popup.js"></script>
+	
 </html>

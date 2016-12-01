@@ -1,7 +1,40 @@
 /*===========================================
 =            tablet mediaqueries            =
-===========================================*/
+===========================================*/	
 
+
+@media (min-width: 48em) {
+
+
+	section{
+		display: flex;
+
+		.filter {
+			position: absolute;
+		    right: 2em;
+
+			select{
+				width: auto;
+			}
+		}
+	}
+
+	.container-tablet{
+		width: calc(100%/2);
+		padding:1em;
+	}
+
+
+	.form{
+		text-align:center;
+		form{
+			width: 50%;
+			margin:0 auto;
+			max-width: 30em;
+		}
+	}
+
+}
 
 
 /*=====  End of tablet mediaqueries  ======*/

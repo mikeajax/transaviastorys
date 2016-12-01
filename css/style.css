@@ -4,20 +4,636 @@
 /*=================================================
 =            Here comes the base syles            =
 =================================================*/
+/* line 4, ../sass/_base.scss */
+html {
+  height: 100%;
+}
+
+/* line 9, ../sass/_base.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 13, ../sass/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "nexa", helvetica;
+  height: 100%;
+}
+/* line 19, ../sass/_base.scss */
+body.noscroll {
+  overflow: hidden;
+}
+
 /*=====  End of Here comes the base syles  ======*/
 /*================================================
 =            Here comes the variables            =
 ================================================*/
 /*=====  End of Here comes the variables  ======*/
-/*===========================================
-=            mobile mediaqueries            =
-===========================================*/
-/*=====  End of mobile mediaqueries  ======*/
+/*==================================
+=            Typografie            =
+==================================*/
+@font-face {
+  font-family: 'nexa';
+  src: url("../font/nexa_light-webfont.woff2") format("woff2"), url("../font/nexa_light-webfont.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nexa';
+  src: url("../font/nexa_w01_regular-webfont.woff2") format("woff2"), url("../font/nexa_w01_regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'nexa';
+  src: url("../font/nexa_bold-webfont.woff2") format("woff2"), url("../font/nexa_bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 26, ../sass/_typografie.scss */
+h1 {
+  font-size: 2.5em;
+}
+
+/* line 30, ../sass/_typografie.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 34, ../sass/_typografie.scss */
+p {
+  line-height: 1.5;
+}
+
+/*=====  End of Typografie  ======*/
+/*=======================================
+=            Content styling            =
+=======================================*/
+/* line 9, ../sass/layout/_content.scss */
+main {
+  position: relative;
+}
+
+/* line 13, ../sass/layout/_content.scss */
+section {
+  position: relative;
+  padding: 1em;
+}
+
+/*=====  End of Content styling  ======*/
+/*======================================
+=            Header styling            =
+======================================*/
+/* line 5, ../sass/layout/_header.scss */
+header {
+  height: auto;
+  padding: 1em;
+  box-shadow: 0 0.3125em 0.625em 0 rgba(0, 0, 0, 0.15);
+  background-color: #FFFFFF;
+  width: 100%;
+}
+/* line 12, ../sass/layout/_header.scss */
+header .menu {
+  height: 2em;
+  position: absolute;
+  right: 1em;
+  top: 1.5em;
+  background-color: #00d66c;
+  border-radius: 0.2em;
+  z-index: 99999;
+}
+/* line 21, ../sass/layout/_header.scss */
+header .menu .line, header .menu .line-small {
+  width: 1.5em;
+  height: 0.188em;
+  background-color: #FFFFFF;
+  display: block;
+  margin: 0.250em;
+}
+/* line 29, ../sass/layout/_header.scss */
+header .menu .line-small {
+  width: 1em;
+}
+/* line 34, ../sass/layout/_header.scss */
+header .menu.active {
+  padding-top: 0.55em;
+}
+/* line 38, ../sass/layout/_header.scss */
+header .menu.active .line, header .menu.active .line-small {
+  display: none;
+}
+/* line 42, ../sass/layout/_header.scss */
+header .menu.active :first-child, header .menu.active :nth-child(2) {
+  display: block;
+  transform: rotate(40deg) translatey(0em) translatex(0.1em);
+  transition: all .2s .2s;
+}
+/* line 47, ../sass/layout/_header.scss */
+header .menu.active :nth-child(2) {
+  transform: rotate(-40deg) translatey(-0.2em) translatex(0.25em);
+  transition: all .2s .2s;
+}
+/* line 55, ../sass/layout/_header.scss */
+header ul {
+  list-style-type: none;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+/* line 64, ../sass/layout/_header.scss */
+header ul li {
+  padding: 0.3em;
+}
+/* line 66, ../sass/layout/_header.scss */
+header ul li a {
+  text-decoration: none;
+  color: #202020;
+}
+
+/*=====  End of Header styling  ======*/
+/*==============================
+=            footer            =
+==============================*/
+/* line 5, ../sass/layout/_footer.scss */
+footer {
+  display: none;
+}
+
+/*=====  End of footer  ======*/
+/*=============================
+=            Aside            =
+=============================*/
+/* line 6, ../sass/layout/_aside.scss */
+aside {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #f3e5d8;
+  padding: 3em 0em;
+  color: #FFFFFF;
+  z-index: 999;
+  transform: translatex(100%);
+  transition: all .2s .2s;
+  width: 100%;
+}
+/* line 19, ../sass/layout/_aside.scss */
+aside h1 {
+  font-size: 1.5em;
+  padding: 0 1em;
+  color: #202020;
+}
+/* line 25, ../sass/layout/_aside.scss */
+aside.active {
+  transform: translatex(0);
+  transition: all .2s .2s;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+/* line 32, ../sass/layout/_aside.scss */
+aside ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #202020;
+}
+/* line 39, ../sass/layout/_aside.scss */
+aside ul a {
+  color: #202020;
+  text-decoration: none;
+}
+/* line 43, ../sass/layout/_aside.scss */
+aside ul a:visited {
+  color: #202020;
+}
+/* line 48, ../sass/layout/_aside.scss */
+aside ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 1em;
+  transition: 0.5s;
+}
+
+/*=====  End of Aside  ======*/
+/*======================================
+=            storys styling            =
+======================================*/
+/* line 6, ../sass/layout/_storys.scss */
+.storys {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #f3e5d8;
+}
+/* line 11, ../sass/layout/_storys.scss */
+.storys article {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: .75rem;
+  padding: 1em;
+  margin: 1em 0;
+}
+/* line 19, ../sass/layout/_storys.scss */
+.storys article p {
+  display: block;
+  overflow: hidden;
+  max-height: 4.5em;
+}
+/* line 25, ../sass/layout/_storys.scss */
+.storys article a {
+  color: #202020;
+  text-decoration: none;
+}
+/* line 30, ../sass/layout/_storys.scss */
+.storys article time {
+  color: #606060;
+}
+/* line 34, ../sass/layout/_storys.scss */
+.storys article ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+}
+/* line 40, ../sass/layout/_storys.scss */
+.storys article ul li {
+  padding: 0.2em;
+  display: flex;
+}
+/* line 45, ../sass/layout/_storys.scss */
+.storys article ul .sub {
+  padding-left: 1em;
+  align-items: center;
+}
+/* line 49, ../sass/layout/_storys.scss */
+.storys article ul .sub li {
+  font-size: 1.5em;
+}
+
+/*=====  End of storys styling  ======*/
+/*==============================
+=            Blocks            =
+==============================*/
+/* line 5, ../sass/elements/_blocks.scss */
+.block {
+  border-radius: .75rem;
+  overflow: hidden;
+}
+
+/*=====  End of Blocks  ======*/
+/*======================================
+=            Images styling            =
+======================================*/
+/* line 5, ../sass/elements/_images.scss */
+.logo {
+  max-width: 80%;
+}
+
+/*=====  End of Images styling  ======*/
+/*==============================
+=            filter            =
+==============================*/
+/* line 4, ../sass/elements/_filter.scss */
+section {
+  display: block;
+}
+/* line 7, ../sass/elements/_filter.scss */
+section .filter {
+  position: relative;
+}
+/* line 11, ../sass/elements/_filter.scss */
+section .filter select {
+  width: 100%;
+  height: 2.5em;
+  margin: 0;
+  padding: .5rem 1rem .5rem .3rem;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  color: #202020;
+  font-size: 1em;
+  border: 0.0625rem solid #606060;
+  outline: 0;
+  border-radius: .5rem;
+  background: #FFFFFF;
+  -webkit-transition: border .2s linear,color .2s linear;
+  transition: border .2s linear,color .2s linear;
+  box-shadow: 0 0.1875rem 0.0625rem #606060;
+}
+
+/*=====  End of filter  ======*/
+/*====================================
+=            icon styling            =
+====================================*/
+/* line 5, ../sass/elements/_icons.scss */
+.main-icon, .icon-catergorie {
+  font-size: 2em;
+  background-color: #202020;
+  border-radius: 100%;
+  color: #FFFFFF;
+  height: 2.5em;
+  width: 2.5em;
+  text-align: center;
+  padding-top: 0.7em;
+}
+/* line 16, ../sass/elements/_icons.scss */
+.main-icon.blue, .blue.icon-catergorie {
+  background-color: #2800a0;
+}
+/* line 20, ../sass/elements/_icons.scss */
+.main-icon.green, .green.icon-catergorie {
+  background-color: #00d66c;
+}
+
+/* line 26, ../sass/elements/_icons.scss */
+.like {
+  color: #ff3268;
+}
+
+/* line 31, ../sass/elements/_icons.scss */
+.icon-catergorie {
+  margin: 0.5em;
+  font-size: 1em;
+  background-color: #ff3268;
+}
+
+/*=====  End of icon styling  ======*/
+/*============================
+=            Form            =
+============================*/
+/* line 7, ../sass/elements/_form.scss */
+.form {
+  background-image: url(../images/Transavia_bg.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em;
+}
+/* line 14, ../sass/elements/_form.scss */
+.form h1 {
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+/* line 22, ../sass/elements/_form.scss */
+form {
+  background-color: #FFFFFF;
+  border-radius: 1.25em;
+  padding: 1em;
+  width: 100%;
+}
+/* line 30, ../sass/elements/_form.scss */
+form input {
+  width: 100%;
+  margin: 0;
+  display: block;
+  border: .0625rem solid #91a3b7;
+  color: #606060;
+  font-size: 1rem;
+  border-radius: .5rem;
+  -webkit-transition: border .2s linear,color .2s linear;
+  transition: border .2s linear,color .2s linear;
+  text-overflow: ellipsis;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  margin: 0.6em 0;
+  padding: 0.5em;
+}
+/* line 47, ../sass/elements/_form.scss */
+form input.btnSubmit {
+  margin: 0;
+  margin-top: 0.5em;
+  position: relative;
+  border: 0;
+  font-weight: bold;
+  line-height: 1.5;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  border-radius: 1.25em;
+  color: #FFFFFF;
+  font-size: 1em;
+  background-color: #ff3268;
+  color: #FFFFFF;
+  width: 8em;
+  text-align: center;
+}
+/* line 66, ../sass/elements/_form.scss */
+form input.btnSubmit:hover {
+  background-color: #ff658e;
+}
+/* line 74, ../sass/elements/_form.scss */
+form label {
+  font-size: 1em;
+}
+
+/* line 82, ../sass/elements/_form.scss */
+.forgot {
+  margin: 1em;
+  text-align: center;
+}
+/* line 86, ../sass/elements/_form.scss */
+.forgot a {
+  color: #00d66c;
+}
+/* line 89, ../sass/elements/_form.scss */
+.forgot a:visited {
+  color: #00d66c;
+}
+
+/* line 95, ../sass/elements/_form.scss */
+.send {
+  text-align: center;
+}
+/* line 98, ../sass/elements/_form.scss */
+.send a {
+  margin-left: 1em;
+  color: #2800a0;
+}
+/* line 102, ../sass/elements/_form.scss */
+.send a:visited {
+  color: #2800a0;
+}
+
+/*=====  End of Form  ======*/
+/*===============================
+=            Buttons            =
+===============================*/
+/* line 4, ../sass/elements/_buttons.scss */
+button {
+  margin: 0;
+  padding: .4375em 1.5em .5625em;
+  position: relative;
+  border: 0;
+  font-weight: bold;
+  line-height: 1.5;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  border-radius: 1.25em;
+  min-height: 1.5rem;
+  min-width: 1.5rem;
+  color: #FFFFFF;
+  font-size: 1em;
+}
+/* line 22, ../sass/elements/_buttons.scss */
+button.pink {
+  background-color: #ff3268;
+  box-shadow: inset 0 -0.1875rem 0.0625rem #ca2b55;
+}
+/* line 26, ../sass/elements/_buttons.scss */
+button.pink:hover {
+  background-color: #ff658e;
+}
+/* line 31, ../sass/elements/_buttons.scss */
+button.blue {
+  background-color: #2800a0;
+  box-shadow: inset 0 -0.1875rem 0.0625rem #120145;
+}
+/* line 35, ../sass/elements/_buttons.scss */
+button.blue:hover {
+  background-color: #5e40b8;
+}
+/* line 40, ../sass/elements/_buttons.scss */
+button.green {
+  background-color: #00d66c;
+  box-shadow: inset 0 -0.1875rem 0.0625rem #1e9162;
+}
+/* line 44, ../sass/elements/_buttons.scss */
+button.green:hover {
+  background-color: #4de298;
+}
+
+/*=====  End of Buttons  ======*/
 /*===========================================
 =            tablet mediaqueries            =
 ===========================================*/
+@media (min-width: 48em) {
+  /* line 9, ../sass/responsive/_tablet.scss */
+  section {
+    display: flex;
+  }
+  /* line 12, ../sass/responsive/_tablet.scss */
+  section .filter {
+    position: absolute;
+    right: 2em;
+  }
+  /* line 16, ../sass/responsive/_tablet.scss */
+  section .filter select {
+    width: auto;
+  }
+
+  /* line 22, ../sass/responsive/_tablet.scss */
+  .container-tablet {
+    width: calc(100%/2);
+    padding: 1em;
+  }
+
+  /* line 28, ../sass/responsive/_tablet.scss */
+  .form {
+    text-align: center;
+  }
+  /* line 30, ../sass/responsive/_tablet.scss */
+  .form form {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 30em;
+  }
+}
 /*=====  End of tablet mediaqueries  ======*/
 /*============================================
 =            Desktop mediaqueries            =
 ============================================*/
+@media (min-width: 75em) {
+  /* line 7, ../sass/responsive/_desktop.scss */
+  header {
+    background-image: url(../images/Transavia_bg.jpg);
+    background-size: cover;
+    background-position-y: 20%;
+    height: 20em;
+    background-repeat: no-repeat;
+  }
+  /* line 14, ../sass/responsive/_desktop.scss */
+  header .logo {
+    width: 30%;
+  }
+
+  /* line 19, ../sass/responsive/_desktop.scss */
+  .menu {
+    display: none;
+  }
+
+  /* line 23, ../sass/responsive/_desktop.scss */
+  nav {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    color: #FFFFFF;
+  }
+  /* line 29, ../sass/responsive/_desktop.scss */
+  nav ul li a {
+    color: #FFFFFF;
+  }
+  /* line 32, ../sass/responsive/_desktop.scss */
+  nav ul li a:hover {
+    color: #00d66c;
+  }
+
+  /* line 40, ../sass/responsive/_desktop.scss */
+  .form {
+    background-image: none;
+  }
+  /* line 42, ../sass/responsive/_desktop.scss */
+  .form h1 {
+    color: #202020;
+  }
+  /* line 46, ../sass/responsive/_desktop.scss */
+  .form form {
+    border: 1px solid #202020;
+  }
+
+  /* line 51, ../sass/responsive/_desktop.scss */
+  .container-desktop {
+    width: 100%;
+  }
+  /* line 54, ../sass/responsive/_desktop.scss */
+  .container-desktop aside {
+    display: block;
+    width: 25%;
+    position: absolute;
+    transform: translateX(0em);
+    box-shadow: none;
+    background-color: #f3e5d8;
+    color: #202020;
+    height: auto;
+  }
+  /* line 65, ../sass/responsive/_desktop.scss */
+  .container-desktop aside li:hover {
+    background-color: #00d66c;
+    color: #FFFFFF;
+  }
+  /* line 70, ../sass/responsive/_desktop.scss */
+  .container-desktop aside li a {
+    color: #202020;
+  }
+  /* line 73, ../sass/responsive/_desktop.scss */
+  .container-desktop aside li a:visited {
+    color: #202020;
+  }
+  /* line 82, ../sass/responsive/_desktop.scss */
+  .container-desktop section {
+    width: 75%;
+    background-color: #FFFFFF;
+  }
+  /* line 86, ../sass/responsive/_desktop.scss */
+  .container-desktop section article {
+    border: 1px solid #202020;
+  }
+}
 /*=====  End of Desktop mediaqueries  ======*/

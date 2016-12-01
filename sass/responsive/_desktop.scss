@@ -2,6 +2,94 @@
 =            Desktop mediaqueries            =
 ============================================*/
 
+@media (min-width: 75em) {
 
+	header{
+		background-image: url(../images/Transavia_bg.jpg);
+		background-size: cover;
+		background-position-y: 20%;
+		height: 20em;
+		background-repeat: no-repeat;
+
+		.logo{
+			width: 30%;
+		}
+	}
+
+	.menu{
+		display: none;
+	}
+
+	nav{
+		position: absolute;
+		top: 1em;
+		right: 1em;
+		color:$white;
+
+		ul li a{
+			color:$white;
+
+			&:hover{
+				color:$green;
+			}
+		}
+	}
+
+
+
+	.form{
+		background-image: none;
+		h1{
+			color:$black;
+		}
+
+		form{
+			border:1px solid $black;
+		}
+	}
+
+	.container-desktop{
+		width: 100%;
+
+		aside{
+			display: block;
+			width: 25%;
+			position: absolute;
+		    transform: translateX(0em);
+		    box-shadow:none;
+		    background-color: $lightBrown;
+		    color:$black;
+		    height: auto;
+
+		    li{
+			    &:hover{
+					background-color: $green;
+					color:$white;
+				}
+
+				a{
+					color:$black;
+
+					&:visited{
+						color:$black;
+					}
+				}
+	    	}
+
+		  
+		}
+
+		section{
+			width: 75%;
+			background-color:$white;
+
+			article{
+				border: 1px solid $black;
+			}
+		}
+	}
+	
+	
+}
 
 /*=====  End of Desktop mediaqueries  ======*/

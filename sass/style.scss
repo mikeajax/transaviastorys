@@ -6,18 +6,25 @@
 // General
 @import "base";
 @import "variables";
-
-
-// mediaqueries
-@import "responsive/mobile";
-@import "responsive/tablet";
-@import "responsive/desktop";
+@import "typografie";
 
 // Content
-
+@import "layout/content";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/aside";
+@import "layout/storys";
 
 // Elements
+@import "elements/blocks";
+@import "elements/images";
+@import "elements/filter";
+@import "elements/icons";
+@import "elements/form";
+@import "elements/buttons";
 
-
+// mediaqueries
+@import "responsive/tablet";
+@import "responsive/desktop";
 
 

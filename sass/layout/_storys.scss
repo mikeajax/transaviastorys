@@ -1,0 +1,58 @@
+/*======================================
+=            storys styling            =
+======================================*/
+
+
+.storys{
+	display: flex;
+	flex-flow: row wrap;
+	background-color: $lightBrown;
+
+	article{
+		width: 100%;
+		background-color: $whiteTransparent;
+		border-radius: .75rem;
+		padding:1em;
+		margin: 1em 0;
+
+
+		p{
+			display: block;
+			overflow: hidden;
+			max-height: 4.5em;
+		}
+
+		a{
+			color:$black;
+			text-decoration: none;
+		}
+
+		time{
+			color:$grey;
+		}
+
+		ul{
+			list-style-type: none;
+			display: flex;
+			padding:0;
+			flex-direction: row;
+
+			li{
+				padding:0.2em;
+				display: flex;
+			}			
+
+			.sub{
+				padding-left:1em;
+				align-items:center;
+
+				li{
+					font-size:1.5em;
+				}
+			}
+		}
+	}
+}
+
+
+/*=====  End of storys styling  ======*/

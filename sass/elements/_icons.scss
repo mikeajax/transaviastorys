@@ -1,0 +1,38 @@
+/*====================================
+=            icon styling            =
+====================================*/
+
+.main-icon{
+	font-size:2em;
+	background-color: $black; //default
+	border-radius:100%;
+	color:$white; //default;
+	height: 2.5em;
+    width: 2.5em;
+    text-align: center;
+    padding-top: 0.7em;
+
+
+	&.blue{
+		background-color:$blue;
+	}
+
+	&.green{
+		background-color: $green;
+	}
+
+}
+
+.like{
+	color:$pink;
+}
+
+
+.icon-catergorie{
+	@extend .main-icon;
+	margin:0.5em;
+	font-size:1em;
+	background-color: $pink;
+}
+
+/*=====  End of icon styling  ======*/

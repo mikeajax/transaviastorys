@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<title>inlog/aanmeld pagina transavia storys</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+
+
+
+	<!-- header -->
+	<header>
+		<img class="logo" src="images/logo_transavia_storys.png" alt="logo transavia storys">
+
+		<nav>
+			<ul>
+				<li><a href="inlog.html">Inloggen</a></li>
+				<li>|</li>
+				<li><a href="index.html">Home</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+
+	<!-- content -->
+	<main class="form">
+
+
+
+		<!-- aanmelden -->
+
+			<h1>Aanmelden</h1>
+
+
+			
+			<form>
+				<label for="firstname">Voornaam</label>
+				<input type="text" name="firstname" placeholder="Voornaam" required>
+				<label for="insertname">Tussenvoegsel</label>
+				<input type="text" name="insertname" placeholder="Tussenvoegsel">
+				<label for="lastname">Achternaam</label>
+				<input type="text" name="lastname" placeholder="Achternaam" required>
+				
+				<label for="email">Email</label>
+				<input type="email" name="email" placeholder="Email" required>
+				<label for="phone">Telefoonnummer</label>
+				<input type="tel" name="phone" placeholder="Telefoonnummer">
+
+				<label for="street">straat</label>
+				<input type="text" placeholder="straat">
+				<label for="number">staatnummer</label>
+				<input type="number" placeholder="staatnummer">
+
+				<label for="text">Postcode</label>
+				<input type="text" pattern="[1-9][0-9]{3}\s?[a-zA-Z]{2}" placeholder="Postcode">
+
+				<label for="password">Wachtwoord</label>
+				<input type="password" name="password" placeholder="Wachtwoord" required>
+				<input type="password" name="password" placeholder="Herhaal wachtwoord" required>
+
+				<div class="send">
+					<input type="submit" value="Aanmelden" class="btnSubmit">
+				</div>
+				
+			</form>
+
+	</main>	
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+/*======================================
+=            Header styling            =
+======================================*/
+
+header{
+	height:auto;
+	padding:1em;
+    box-shadow: 0 .3125em .625em 0 rgba(0,0,0,.15);
+    background-color: $white;
+    width: 100%;
+
+    .menu{
+    	height: 2em;
+		position: absolute;
+		right: 1em;
+		top: 1.5em;
+		background-color: $green;
+		border-radius: 0.2em;
+		z-index: 99999;
+
+    	.line{
+    		width: 1.5em;
+    		height:0.188em;
+    		background-color: $white;
+    		display: block;
+    		margin:0.250em;
+    	}
+
+    	.line-small{
+			@extend .line;
+			width: 1em;
+    	}
+
+    	&.active{
+
+    		padding-top:0.55em;
+
+    		.line{
+    			display: none;
+    		}
+
+    		:first-child{
+    			display: block;
+    			transform:rotate(40deg) translatey(0em) translatex(0.1em);
+    			transition: all .2s .2s;
+    		}
+    		:nth-child(2){
+    			@extend :first-child;
+    			transform:rotate(-40deg) translatey(-0.2em) translatex(0.25em);
+    			transition: all .2s .2s;
+    		}
+    	}
+    }
+
+	ul{
+		list-style-type: none;
+		width: 100%;
+		text-align: center;
+		padding:0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+
+		li{
+			padding:0.3em;
+			a{
+				text-decoration: none;
+				color:$black;
+			}
+		}
+	}
+}
+
+/*=====  End of Header styling  ======*/

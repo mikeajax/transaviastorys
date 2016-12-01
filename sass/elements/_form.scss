@@ -1,0 +1,108 @@
+/*============================
+=            Form            =
+============================*/
+
+// login page
+
+.form{
+	background-image: url(../images/Transavia_bg.jpg);
+	height: 100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding:1em;
+
+	h1{
+		color:$white;
+		margin-top: 0;
+	}
+}
+
+
+
+form{
+	background-color: $white;
+	border-radius: 1.25em;
+	padding:1em;
+    width: 100%;
+
+
+
+	input{
+		width: 100%;
+		margin: 0;
+		display: block;
+		border: .0625rem solid #91a3b7;
+		color: $grey;
+		font-size: 1rem;
+		border-radius: .5rem;
+		-webkit-transition: border .2s linear,color .2s linear;
+		transition: border .2s linear,color .2s linear;
+		text-overflow: ellipsis;
+		-webkit-appearance: none;
+		-moz-appearance: textfield;
+		appearance: none;
+		margin: 0.6em 0;
+		padding:0.5em;
+
+		&.btnSubmit{
+			margin: 0;
+			margin-top: 0.5em;
+			position: relative;
+			border: 0;
+			font-weight: bold;
+			line-height: 1.5;
+			cursor: pointer;
+			display: inline-block;
+			-webkit-transition: background-color .2s linear;
+			transition: background-color .2s linear;
+			border-radius: 1.25em;
+			color:$white;
+			font-size: 1em;
+			background-color: $pink;
+			color:$white;
+			width: 8em;
+			text-align: center;
+
+			&:hover{
+	    		background-color: $pinkHover;
+		    }
+		}
+
+
+	}
+
+	label{
+		font-size: 1em;	
+	}
+
+}
+
+
+
+.forgot{
+	margin:1em;
+	text-align:center;
+
+	a{
+		color:$green;
+
+		&:visited{
+			color:$green;
+		}
+	}
+}
+
+.send{
+	text-align:center;
+
+	a{
+		margin-left:1em;
+		color:$blue;
+
+		&:visited{
+			color:$blue;
+		}
+	}
+}
+
+/*=====  End of Form  ======*/
