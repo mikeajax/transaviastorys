@@ -516,30 +516,36 @@ button.green:hover {
 ===========================================*/
 @media (min-width: 48em) {
   /* line 9, ../sass/responsive/_tablet.scss */
+  aside {
+    width: 50%;
+    box-shadow: 0 0 0.3125em 0.625em rgba(0, 0, 0, 0.15);
+  }
+
+  /* line 15, ../sass/responsive/_tablet.scss */
   section {
     display: flex;
   }
-  /* line 12, ../sass/responsive/_tablet.scss */
+  /* line 18, ../sass/responsive/_tablet.scss */
   section .filter {
     position: absolute;
     right: 2em;
   }
-  /* line 16, ../sass/responsive/_tablet.scss */
+  /* line 22, ../sass/responsive/_tablet.scss */
   section .filter select {
     width: auto;
   }
 
-  /* line 22, ../sass/responsive/_tablet.scss */
+  /* line 28, ../sass/responsive/_tablet.scss */
   .container-tablet {
     width: calc(100%/2);
     padding: 1em;
   }
 
-  /* line 28, ../sass/responsive/_tablet.scss */
+  /* line 34, ../sass/responsive/_tablet.scss */
   .form {
     text-align: center;
   }
-  /* line 30, ../sass/responsive/_tablet.scss */
+  /* line 36, ../sass/responsive/_tablet.scss */
   .form form {
     width: 50%;
     margin: 0 auto;
